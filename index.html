@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cáclculo de salário líquido</title>
+</head>
+<body>
+
+    <header>
+    <h1>Folha de pagamento</h1>
+    </header>
+
+    <section>
+        <div>
+            <label for="salarioBruto">Salário Bruto</label>
+            <input type="number" name="salarioBruto" id="salarioBruto">  
+        </div>
+        <div>
+            <input type="button" value="Calcular desconto INSS" onclick="descontoInss()">
+        </div>
+        <div>
+            <input type="button" value="Calcular desconto IRFF" onclick="descontoIrff()">
+        </div>
+        <div>
+            <input type="button" value="FGTS a recolher" onclick="fgtRecolhido()">
+        </div>
+        
+        <div id = "res1">Desconto de INSS</div>
+        <div id = "res2">Desconto de IRFF</div>
+        <div id = "res3">FGTS recolhido</div>
+
+    
+    </section>
+
+    <footer>
+        <p>&copy; Robson Albertassi</p>
+    </footer>
+
+    <script src="./script.js"></script>  
+</body>
+</html>
